@@ -1,0 +1,1337 @@
+{
+  "results": [
+    {
+      "task_id": "binary_002",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 1.0,
+      "cost": 0.03,
+      "risk": 0.0,
+      "composite_J": 0.9994,
+      "confidence": 0.5,
+      "latency": 0.712986946105957,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_002",
+      "arm": "csce_u4_g0_hlong",
+      "payload": {
+        "u": 4,
+        "h": "long",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 2.49,
+      "risk": 0.0,
+      "composite_J": 0.9502,
+      "confidence": 0.3,
+      "latency": 1.333876132965088,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_002",
+      "arm": "csce_u2_g2_hlong",
+      "payload": {
+        "u": 2,
+        "h": "long",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 2.5,
+      "risk": 0.0,
+      "composite_J": 0.95,
+      "confidence": 0.3,
+      "latency": 1.3653039932250977,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_002",
+      "arm": "csce_u2_g0_hshort",
+      "payload": {
+        "u": 2,
+        "h": "short",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 1.6,
+      "risk": 0.0,
+      "composite_J": 0.968,
+      "confidence": 0.3,
+      "latency": 1.0645029544830322,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_000",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 1.0,
+      "cost": 0.03,
+      "risk": 0.0,
+      "composite_J": 0.9994,
+      "confidence": 0.5,
+      "latency": 0.5277657508850098,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_000",
+      "arm": "csce_u2_g0_hlong",
+      "payload": {
+        "u": 2,
+        "h": "long",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 5.54,
+      "risk": 0.0,
+      "composite_J": 0.8892,
+      "confidence": 0.3,
+      "latency": 2.5459585189819336,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_000",
+      "arm": "csce_u4_g2_hshort",
+      "payload": {
+        "u": 4,
+        "h": "short",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 5.6000000000000005,
+      "risk": 0.0,
+      "composite_J": 0.888,
+      "confidence": 0.3,
+      "latency": 2.6225099563598633,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_000",
+      "arm": "csce_u0_g2_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 6.9,
+      "risk": 0.0,
+      "composite_J": 0.862,
+      "confidence": 0.3,
+      "latency": 2.5562446117401123,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "code_000",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.0,
+      "cost": 16.3,
+      "risk": 0.0,
+      "composite_J": -0.326,
+      "confidence": 0.5,
+      "latency": 5.3160459995269775,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_000",
+      "arm": "csce_u0_g2_hlong",
+      "payload": {
+        "u": 0,
+        "h": "long",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 7.890000000000001,
+      "risk": 0.0,
+      "composite_J": 0.6422,
+      "confidence": 0.3,
+      "latency": 2.6540467739105225,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_000",
+      "arm": "csce_u2_g2_hshort",
+      "payload": {
+        "u": 2,
+        "h": "short",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 9.4,
+      "risk": 0.0,
+      "composite_J": 0.6120000000000001,
+      "confidence": 0.3,
+      "latency": 3.2296159267425537,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_000",
+      "arm": "csce_u0_g0_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 9.91,
+      "risk": 0.0,
+      "composite_J": 0.6018,
+      "confidence": 0.3,
+      "latency": 3.588060140609741,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_002",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.0,
+      "cost": 13.370000000000001,
+      "risk": 0.0,
+      "composite_J": -0.2674,
+      "confidence": 0.5,
+      "latency": 5.500568389892578,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_002",
+      "arm": "csce_u4_g2_hlong",
+      "payload": {
+        "u": 4,
+        "h": "long",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 7.71,
+      "risk": 0.0,
+      "composite_J": 0.6458,
+      "confidence": 0.3,
+      "latency": 2.654369592666626,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_002",
+      "arm": "csce_u4_g0_hlong",
+      "payload": {
+        "u": 4,
+        "h": "long",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 7.98,
+      "risk": 0.0,
+      "composite_J": 0.6404000000000001,
+      "confidence": 0.3,
+      "latency": 4.424223899841309,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_002",
+      "arm": "csce_u0_g0_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 7.140000000000001,
+      "risk": 0.0,
+      "composite_J": 0.6572,
+      "confidence": 0.3,
+      "latency": 2.600041151046753,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "qa_001",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.9,
+      "cost": 5.28,
+      "risk": 0.8596491228070176,
+      "composite_J": -0.06524912280701756,
+      "confidence": 0.5,
+      "latency": 2.059436798095703,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "qa_001",
+      "arm": "csce_u0_g2_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 2.62,
+      "risk": 0.7837837837837838,
+      "composite_J": 0.06381621621621625,
+      "confidence": 0.5,
+      "latency": 1.3160457611083984,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "qa_001",
+      "arm": "csce_u0_g2_hlong",
+      "payload": {
+        "u": 0,
+        "h": "long",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 3.44,
+      "risk": 0.8367346938775511,
+      "composite_J": -0.005534693877551011,
+      "confidence": 0.5,
+      "latency": 1.9766275882720947,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "qa_001",
+      "arm": "csce_u2_g0_hshort",
+      "payload": {
+        "u": 2,
+        "h": "short",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 3.74,
+      "risk": 0.8235294117647058,
+      "composite_J": 0.0016705882352942014,
+      "confidence": 0.5,
+      "latency": 1.6161346435546875,
+      "exploration_proxy": 0.2
+    },
+    {
+      "task_id": "qa_000",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.9,
+      "cost": 3.14,
+      "risk": 0.8611111111111112,
+      "composite_J": -0.023911111111111105,
+      "confidence": 0.5,
+      "latency": 0.887465238571167,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "qa_000",
+      "arm": "csce_u0_g0_hlong",
+      "payload": {
+        "u": 0,
+        "h": "long",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 2.4,
+      "risk": 0.875,
+      "composite_J": -0.02300000000000002,
+      "confidence": 0.5,
+      "latency": 1.4683561325073242,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "qa_000",
+      "arm": "csce_u2_g0_hshort",
+      "payload": {
+        "u": 2,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 1.19,
+      "risk": 0.8421052631578947,
+      "composite_J": 0.03409473684210529,
+      "confidence": 0.5,
+      "latency": 0.8108363151550293,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "qa_000",
+      "arm": "csce_u0_g2_hlong",
+      "payload": {
+        "u": 0,
+        "h": "long",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 2.39,
+      "risk": 0.875,
+      "composite_J": -0.02279999999999993,
+      "confidence": 0.5,
+      "latency": 1.2802808284759521,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "code_001",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.0,
+      "cost": 32.07,
+      "risk": 0.0,
+      "composite_J": -0.6414,
+      "confidence": 0.5,
+      "latency": 16.794514417648315,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_001",
+      "arm": "csce_u0_g2_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 17.11,
+      "risk": 0.0,
+      "composite_J": 0.45780000000000004,
+      "confidence": 0.3,
+      "latency": 4.030215501785278,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_001",
+      "arm": "csce_u0_g2_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 17.22,
+      "risk": 0.0,
+      "composite_J": 0.45560000000000006,
+      "confidence": 0.3,
+      "latency": 4.3776328563690186,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_001",
+      "arm": "csce_u0_g0_hlong",
+      "payload": {
+        "u": 0,
+        "h": "long",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 17.23,
+      "risk": 0.0,
+      "composite_J": 0.4554,
+      "confidence": 0.3,
+      "latency": 4.819427013397217,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "binary_001",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 1.0,
+      "cost": 0.02,
+      "risk": 0.0,
+      "composite_J": 0.9996,
+      "confidence": 0.5,
+      "latency": 0.5183298587799072,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_001",
+      "arm": "csce_u0_g0_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 0.02,
+      "risk": 0.0,
+      "composite_J": 0.9996,
+      "confidence": 0.5,
+      "latency": 0.43312644958496094,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_001",
+      "arm": "csce_u4_g2_hlong",
+      "payload": {
+        "u": 4,
+        "h": "long",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 0.02,
+      "risk": 0.0,
+      "composite_J": 0.9996,
+      "confidence": 0.5,
+      "latency": 0.4182276725769043,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_001",
+      "arm": "csce_u4_g2_hlong",
+      "payload": {
+        "u": 4,
+        "h": "long",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 0.02,
+      "risk": 0.0,
+      "composite_J": 0.9996,
+      "confidence": 0.5,
+      "latency": 0.3530545234680176,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_002",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 1.0,
+      "cost": 0.03,
+      "risk": 0.0,
+      "composite_J": 0.9994,
+      "confidence": 0.5,
+      "latency": 1.4843010902404785,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_002",
+      "arm": "csce_u4_g2_hlong",
+      "payload": {
+        "u": 4,
+        "h": "long",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 4.65,
+      "risk": 0.0,
+      "composite_J": 0.907,
+      "confidence": 0.3,
+      "latency": 12.890552997589111,
+      "exploration_proxy": 0.2
+    },
+    {
+      "task_id": "binary_002",
+      "arm": "csce_u2_g0_hshort",
+      "payload": {
+        "u": 2,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 2.82,
+      "risk": 0.0,
+      "composite_J": 0.9436,
+      "confidence": 0.3,
+      "latency": 9.552752017974854,
+      "exploration_proxy": 0.2
+    },
+    {
+      "task_id": "binary_002",
+      "arm": "csce_u4_g0_hshort",
+      "payload": {
+        "u": 4,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 3.88,
+      "risk": 0.0,
+      "composite_J": 0.9224,
+      "confidence": 0.3,
+      "latency": 8.637367725372314,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_000",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 1.0,
+      "cost": 0.03,
+      "risk": 0.0,
+      "composite_J": 0.9994,
+      "confidence": 0.5,
+      "latency": 1.5952239036560059,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_000",
+      "arm": "csce_u4_g0_hshort",
+      "payload": {
+        "u": 4,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 1.55,
+      "risk": 0.0,
+      "composite_J": 0.969,
+      "confidence": 0.3,
+      "latency": 11.88429069519043,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_000",
+      "arm": "csce_u0_g0_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 7.92,
+      "risk": 0.0,
+      "composite_J": 0.8416,
+      "confidence": 0.3,
+      "latency": 11.779735565185547,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_000",
+      "arm": "csce_u4_g2_hshort",
+      "payload": {
+        "u": 4,
+        "h": "short",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 3.5300000000000002,
+      "risk": 0.0,
+      "composite_J": 0.9294,
+      "confidence": 0.3,
+      "latency": 10.679089546203613,
+      "exploration_proxy": 0.2
+    },
+    {
+      "task_id": "code_000",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.8,
+      "cost": 5.71,
+      "risk": 0.0,
+      "composite_J": 0.6858000000000001,
+      "confidence": 0.5,
+      "latency": 5.306597709655762,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_000",
+      "arm": "csce_u0_g0_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 12.14,
+      "risk": 0.0,
+      "composite_J": 0.5572,
+      "confidence": 0.3,
+      "latency": 19.221939086914062,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_000",
+      "arm": "csce_u4_g2_hlong",
+      "payload": {
+        "u": 4,
+        "h": "long",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 11.08,
+      "risk": 0.0,
+      "composite_J": 0.5784,
+      "confidence": 0.3,
+      "latency": 25.95799493789673,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_000",
+      "arm": "csce_u2_g2_hlong",
+      "payload": {
+        "u": 2,
+        "h": "long",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 12.75,
+      "risk": 0.0,
+      "composite_J": 0.545,
+      "confidence": 0.3,
+      "latency": 19.878882884979248,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_002",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.8,
+      "cost": 2.37,
+      "risk": 0.0,
+      "composite_J": 0.7526,
+      "confidence": 0.5,
+      "latency": 9.033831357955933,
+      "exploration_proxy": 0.56
+    },
+    {
+      "task_id": "code_002",
+      "arm": "csce_u0_g0_hlong",
+      "payload": {
+        "u": 0,
+        "h": "long",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 10.24,
+      "risk": 0.0,
+      "composite_J": 0.5952000000000001,
+      "confidence": 0.3,
+      "latency": 20.540584087371826,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_002",
+      "arm": "csce_u4_g2_hshort",
+      "payload": {
+        "u": 4,
+        "h": "short",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 8.15,
+      "risk": 0.0,
+      "composite_J": 0.637,
+      "confidence": 0.3,
+      "latency": 17.475646257400513,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_002",
+      "arm": "csce_u4_g2_hlong",
+      "payload": {
+        "u": 4,
+        "h": "long",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 6.890000000000001,
+      "risk": 0.0,
+      "composite_J": 0.6622,
+      "confidence": 0.3,
+      "latency": 15.861325740814209,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "qa_001",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.9,
+      "cost": 5.29,
+      "risk": 0.8333333333333334,
+      "composite_J": -0.03913333333333335,
+      "confidence": 0.5,
+      "latency": 19.22705316543579,
+      "exploration_proxy": 0.8
+    },
+    {
+      "task_id": "qa_001",
+      "arm": "csce_u0_g0_hshort",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 11.25,
+      "risk": 0.9238095238095239,
+      "composite_J": -0.2488095238095238,
+      "confidence": 0.3,
+      "latency": 21.429047107696533,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "qa_001",
+      "arm": "csce_u4_g0_hshort",
+      "payload": {
+        "u": 4,
+        "h": "short",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 11.15,
+      "risk": 0.9191919191919192,
+      "composite_J": -0.24219191919191918,
+      "confidence": 0.3,
+      "latency": 24.681891441345215,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "qa_001",
+      "arm": "csce_u4_g2_hshort",
+      "payload": {
+        "u": 4,
+        "h": "short",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 12.950000000000001,
+      "risk": 0.9344262295081968,
+      "composite_J": -0.29342622950819675,
+      "confidence": 0.3,
+      "latency": 18.67382287979126,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "qa_000",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.9,
+      "cost": 2.83,
+      "risk": 0.9333333333333333,
+      "composite_J": -0.08993333333333331,
+      "confidence": 0.5,
+      "latency": 11.25829792022705,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "qa_000",
+      "arm": "csce_u4_g2_hlong",
+      "payload": {
+        "u": 4,
+        "h": "long",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 9.02,
+      "risk": 0.9861111111111112,
+      "composite_J": -0.26651111111111114,
+      "confidence": 0.3,
+      "latency": 20.46153974533081,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "qa_000",
+      "arm": "csce_u2_g2_hlong",
+      "payload": {
+        "u": 2,
+        "h": "long",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 13.26,
+      "risk": 0.956140350877193,
+      "composite_J": -0.3213403508771929,
+      "confidence": 0.3,
+      "latency": 24.711153984069824,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "qa_000",
+      "arm": "csce_u0_g0_hlong",
+      "payload": {
+        "u": 0,
+        "h": "long",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.9,
+      "cost": 11.57,
+      "risk": 0.9603960396039604,
+      "composite_J": -0.2917960396039604,
+      "confidence": 0.3,
+      "latency": 22.205772638320923,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_001",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 0.8,
+      "cost": 21.32,
+      "risk": 0.0,
+      "composite_J": 0.37360000000000004,
+      "confidence": 0.5,
+      "latency": 34.54618835449219,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_001",
+      "arm": "csce_u2_g2_hshort",
+      "payload": {
+        "u": 2,
+        "h": "short",
+        "r": "high",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 27.44,
+      "risk": 0.0,
+      "composite_J": 0.2512,
+      "confidence": 0.3,
+      "latency": 36.0504469871521,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_001",
+      "arm": "csce_u2_g2_hlong",
+      "payload": {
+        "u": 2,
+        "h": "long",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 34.33,
+      "risk": 0.0,
+      "composite_J": 0.11340000000000006,
+      "confidence": 0.3,
+      "latency": 26.429563283920288,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "code_001",
+      "arm": "csce_u2_g0_hlong",
+      "payload": {
+        "u": 2,
+        "h": "long",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 0.8,
+      "cost": 30.07,
+      "risk": 0.0,
+      "composite_J": 0.1986,
+      "confidence": 0.3,
+      "latency": 23.13054609298706,
+      "exploration_proxy": 1.0
+    },
+    {
+      "task_id": "binary_001",
+      "arm": "baseline",
+      "payload": {
+        "u": 0,
+        "h": "short",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": null
+      },
+      "quality": 1.0,
+      "cost": 0.02,
+      "risk": 0.0,
+      "composite_J": 0.9996,
+      "confidence": 0.5,
+      "latency": 2.4916229248046875,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_001",
+      "arm": "csce_u4_g2_hshort",
+      "payload": {
+        "u": 4,
+        "h": "short",
+        "r": "low",
+        "g": 2,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 5.25,
+      "risk": 0.0,
+      "composite_J": 0.895,
+      "confidence": 0.3,
+      "latency": 13.926192045211792,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_001",
+      "arm": "csce_u2_g0_hlong",
+      "payload": {
+        "u": 2,
+        "h": "long",
+        "r": "high",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 3.92,
+      "risk": 0.0,
+      "composite_J": 0.9216,
+      "confidence": 0.3,
+      "latency": 12.152762651443481,
+      "exploration_proxy": 0.0
+    },
+    {
+      "task_id": "binary_001",
+      "arm": "csce_u0_g0_hlong",
+      "payload": {
+        "u": 0,
+        "h": "long",
+        "r": "low",
+        "g": 0,
+        "a": 1,
+        "c": "yn@0.75"
+      },
+      "quality": 1.0,
+      "cost": 4.32,
+      "risk": 0.0,
+      "composite_J": 0.9136,
+      "confidence": 0.3,
+      "latency": 14.389101028442383,
+      "exploration_proxy": 0.0
+    }
+  ],
+  "analysis": {
+    "primary_hypothesis": {
+      "baseline_mean_J": 0.3972358187134503,
+      "best_arm": "csce_u4_g0_hlong",
+      "best_mean_J": 0.7953000000000001,
+      "effect_size_pct": 100.20853169177502,
+      "t_statistic": 0.922456797692464,
+      "p_value": 0.36999215799771734,
+      "significant": false
+    },
+    "arm_summary": {
+      "baseline": {
+        "n": 16,
+        "J_mean": 0.3972358187134503,
+        "J_std": 0.5727558227978106,
+        "quality_mean": 0.75,
+        "cost_mean": 6.74,
+        "risk_mean": 0.2179641812865497
+      },
+      "csce_u4_g0_hlong": {
+        "n": 2,
+        "J_mean": 0.7953000000000001,
+        "J_std": 0.15489999999999998,
+        "quality_mean": 0.9,
+        "cost_mean": 5.235,
+        "risk_mean": 0.0
+      },
+      "csce_u2_g2_hlong": {
+        "n": 4,
+        "J_mean": 0.3217649122807018,
+        "J_std": 0.47474033586842146,
+        "quality_mean": 0.875,
+        "cost_mean": 15.709999999999999,
+        "risk_mean": 0.23903508771929824
+      },
+      "csce_u2_g0_hshort": {
+        "n": 4,
+        "J_mean": 0.48684133126934986,
+        "J_std": 0.46917807776390535,
+        "quality_mean": 0.95,
+        "cost_mean": 2.3375,
+        "risk_mean": 0.41640866873065013
+      },
+      "csce_u2_g0_hlong": {
+        "n": 3,
+        "J_mean": 0.6698000000000001,
+        "J_std": 0.33345116583991724,
+        "quality_mean": 0.9333333333333332,
+        "cost_mean": 13.176666666666668,
+        "risk_mean": 0.0
+      },
+      "csce_u4_g2_hshort": {
+        "n": 5,
+        "J_mean": 0.6111947540983607,
+        "J_std": 0.4642038722321517,
+        "quality_mean": 0.9399999999999998,
+        "cost_mean": 7.096000000000001,
+        "risk_mean": 0.18688524590163935
+      },
+      "csce_u0_g2_hshort": {
+        "n": 4,
+        "J_mean": 0.45980405405405406,
+        "J_std": 0.28221872588206337,
+        "quality_mean": 0.875,
+        "cost_mean": 10.962499999999999,
+        "risk_mean": 0.19594594594594594
+      },
+      "csce_u0_g2_hlong": {
+        "n": 3,
+        "J_mean": 0.20462176870748303,
+        "J_std": 0.3094948077913328,
+        "quality_mean": 0.8666666666666667,
+        "cost_mean": 4.573333333333333,
+        "risk_mean": 0.5705782312925171
+      },
+      "csce_u2_g2_hshort": {
+        "n": 2,
+        "J_mean": 0.43160000000000004,
+        "J_std": 0.18040000000000006,
+        "quality_mean": 0.8,
+        "cost_mean": 18.42,
+        "risk_mean": 0.0
+      },
+      "csce_u0_g0_hshort": {
+        "n": 6,
+        "J_mean": 0.5680984126984127,
+        "J_std": 0.39529081701020785,
+        "quality_mean": 0.8833333333333334,
+        "cost_mean": 8.063333333333334,
+        "risk_mean": 0.15396825396825398
+      },
+      "csce_u4_g2_hlong": {
+        "n": 7,
+        "J_mean": 0.646584126984127,
+        "J_std": 0.40632381517892485,
+        "quality_mean": 0.9,
+        "cost_mean": 5.627142857142857,
+        "risk_mean": 0.14087301587301587
+      },
+      "csce_u0_g0_hlong": {
+        "n": 5,
+        "J_mean": 0.3298807920792079,
+        "J_std": 0.43310146705235897,
+        "quality_mean": 0.8800000000000001,
+        "cost_mean": 9.152,
+        "risk_mean": 0.36707920792079207
+      },
+      "csce_u4_g0_hshort": {
+        "n": 3,
+        "J_mean": 0.549736026936027,
+        "J_std": 0.5603006894479786,
+        "quality_mean": 0.9666666666666667,
+        "cost_mean": 5.526666666666666,
+        "risk_mean": 0.3063973063973064
+      }
+    }
+  }
+}
