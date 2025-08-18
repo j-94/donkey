@@ -1,0 +1,45 @@
+{
+  "vanilla": [
+    {
+      "problem": "Longest Increasing Subsequence",
+      "code": "def longest_increasing_subsequence(nums: list) -> int:\n    \"\"\"\n    Returns the length of the longest strictly increasing subsequence in nums\n    using dynamic programming (O(n^2) time, O(n) space).\n    \"\"\"\n    if not nums:\n        return 0\n\n    n = len(nums)\n    dp = [1] * n  # dp[i] is length of LIS ending at i\n\n    for i in range(1, n):\n        for j in range(i):\n            if nums[j] < nums[i]:\n                dp[i] = max(dp[i], dp[j] + 1)\n\n    return max(dp)",
+      "time": 6.4053168296813965,
+      "success": true
+    },
+    {
+      "problem": "Binary Search",
+      "code": "def binary_search(arr, target):\n    \"\"\"\n    Perform binary search on a sorted list `arr` to find `target`.\n    Returns the index of `target` if found, otherwise returns -1.\n    \"\"\"\n    low = 0\n    high = len(arr) - 1\n\n    while low <= high:\n        mid = (low + high) // 2\n        value = arr[mid]\n        if value == target:\n            return mid\n        elif value < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n\n    return -1",
+      "time": 5.5045177936553955,
+      "success": true
+    },
+    {
+      "problem": "Valid Parentheses",
+      "code": "def is_valid_parentheses(s):\n    \"\"\"\n    Return True if the string s contains valid parentheses.\n    Valid pairs are: (), [], {}. Any other character will make the string invalid.\n    \"\"\"\n    pairs = {')': '(', ']': '[', '}': '{'}\n    stack = []\n    opens = set(pairs.values())\n\n    for ch in s:\n        if ch in opens:\n            stack.append(ch)\n        elif ch in pairs:\n            if not stack or stack.pop() != pairs[ch]:\n                return False\n        else:\n            # treat any non-bracket character as invalid\n            return False\n\n    return not stack",
+      "time": 7.886650323867798,
+      "success": true
+    }
+  ],
+  "simplified_csce": [
+    {
+      "problem": "Longest Increasing Subsequence",
+      "code": "def longest_increasing_subsequence(nums):\n    \"\"\"\n    Return the length of the longest strictly increasing subsequence in nums using dynamic programming.\n    \"\"\"\n    if not nums:\n        return 0\n\n    n = len(nums)\n    # dp[i] will hold the length of the longest increasing subsequence ending at i\n    dp = [1] * n\n\n    max_len = 1  # at least one element exists\n\n    for i in range(n):\n        # consider all previous elements\n        for j in range(i):\n            if nums[j] < nums[i]:\n                # if we can extend the subsequence ending at j with nums[i]\n                candidate = dp[j] + 1\n                if candidate > dp[i]:\n                    dp[i] = candidate\n        if dp[i] > max_len:\n            max_len = dp[i]\n\n    return max_len\n\n# STEPS: 6",
+      "time": 13.91819953918457,
+      "success": true,
+      "structured": true
+    },
+    {
+      "problem": "Binary Search",
+      "code": "def binary_search(arr, target):\n    \"\"\"\n    Return the index of target in sorted array arr, or -1 if not found.\n    Assumes arr is sorted in non-decreasing order.\n    \"\"\"\n    if not arr:\n        return -1  # empty array edge case\n\n    left = 0\n    right = len(arr) - 1\n\n    while left <= right:\n        mid = left + (right - left) // 2\n        mid_val = arr[mid]\n        if mid_val == target:\n            return mid\n        elif target < mid_val:\n            right = mid - 1\n        else:\n            left = mid + 1\n\n    return -1  # not found\n\n# STEPS: 6",
+      "time": 11.86355471611023,
+      "success": true,
+      "structured": true
+    },
+    {
+      "problem": "Valid Parentheses",
+      "code": "",
+      "time": 15.232329368591309,
+      "success": false,
+      "structured": false
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "e1": {
+    "csce": {
+      "pass_at_1": 1.0,
+      "avg_steps": 2.0,
+      "progress_per_sec": 2.0,
+      "avg_h_final": 0.0,
+      "avg_spec_violations": 1.0666666666666667,
+      "avg_rework": 1.7,
+      "total_results": 30
+    },
+    "vanilla": {
+      "pass_at_1": 0.36666666666666664,
+      "avg_steps": 7.533333333333333,
+      "progress_per_sec": 0.3157764711626185,
+      "avg_h_final": 0.44851118326958034,
+      "avg_spec_violations": 0.8,
+      "avg_rework": 1.6,
+      "total_results": 30
+    },
+    "effect_size_pass_at_1": 0.6333333333333333,
+    "tasks_completed": 30
+  },
+  "e2": {
+    "sweep_results": {
+      "r1_q2": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 1.0,
+        "avg_rework": 1.1,
+        "total_results": 10
+      },
+      "r1_q3": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 0.8,
+        "avg_rework": 1.5,
+        "total_results": 10
+      },
+      "r1_q4": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 1.1,
+        "avg_rework": 1.4,
+        "total_results": 10
+      },
+      "r2_q2": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 1.2,
+        "avg_rework": 1.4,
+        "total_results": 10
+      },
+      "r2_q3": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 1.2,
+        "avg_rework": 0.7,
+        "total_results": 10
+      },
+      "r2_q4": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 0.9,
+        "avg_rework": 1.6,
+        "total_results": 10
+      },
+      "r3_q2": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 1.0,
+        "avg_rework": 2.2,
+        "total_results": 10
+      },
+      "r3_q3": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 1.0,
+        "avg_rework": 1.6,
+        "total_results": 10
+      },
+      "r3_q4": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 0.8,
+        "avg_rework": 1.4,
+        "total_results": 10
+      },
+      "r4_q2": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 1.1,
+        "avg_rework": 1.5,
+        "total_results": 10
+      },
+      "r4_q3": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 0.3,
+        "avg_rework": 2.1,
+        "total_results": 10
+      },
+      "r4_q4": {
+        "pass_at_1": 1.0,
+        "avg_steps": 2.0,
+        "progress_per_sec": 2.0,
+        "avg_h_final": 0.0,
+        "avg_spec_violations": 0.7,
+        "avg_rework": 2.2,
+        "total_results": 10
+      }
+    },
+    "pareto_configs": [
+      "r1_q2",
+      "r1_q3",
+      "r1_q4"
+    ],
+    "recommended_config": "r1_q2"
+  },
+  "e3": {
+    "ablation_results": {
+      "config_1_u0g1rl": {
+        "metrics": {
+          "pass_at_1": 1.0,
+          "avg_steps": 2.0,
+          "progress_per_sec": 2.0,
+          "avg_h_final": 0.0,
+          "avg_spec_violations": 1.25,
+          "avg_rework": 2.5,
+          "total_results": 8
+        },
+        "knobs": "PayloadKnobs(u=0, h='short', r='low', g=1, a=1, c=None)"
+      },
+      "config_2_u2g2rm": {
+        "metrics": {
+          "pass_at_1": 1.0,
+          "avg_steps": 2.0,
+          "progress_per_sec": 2.0,
+          "avg_h_final": 0.0,
+          "avg_spec_violations": 1.375,
+          "avg_rework": 2.0,
+          "total_results": 8
+        },
+        "knobs": "PayloadKnobs(u=2, h='short', r='med', g=2, a=1, c=None)"
+      },
+      "config_3_u4g3rh": {
+        "metrics": {
+          "pass_at_1": 1.0,
+          "avg_steps": 2.0,
+          "progress_per_sec": 2.0,
+          "avg_h_final": 0.0,
+          "avg_spec_violations": 1.125,
+          "avg_rework": 2.0,
+          "total_results": 8
+        },
+        "knobs": "PayloadKnobs(u=4, h='long', r='high', g=3, a=2, c=None)"
+      },
+      "config_4_u1g1rl": {
+        "metrics": {
+          "pass_at_1": 1.0,
+          "avg_steps": 2.0,
+          "progress_per_sec": 2.0,
+          "avg_h_final": 0.0,
+          "avg_spec_violations": 1.0,
+          "avg_rework": 1.25,
+          "total_results": 8
+        },
+        "knobs": "PayloadKnobs(u=1, h='long', r='low', g=1, a=2, c=None)"
+      },
+      "config_5_u3g3rh": {
+        "metrics": {
+          "pass_at_1": 1.0,
+          "avg_steps": 2.0,
+          "progress_per_sec": 2.0,
+          "avg_h_final": 0.0,
+          "avg_spec_violations": 1.0,
+          "avg_rework": 1.5,
+          "total_results": 8
+        },
+        "knobs": "PayloadKnobs(u=3, h='short', r='high', g=3, a=1, c=None)"
+      }
+    },
+    "top_3_configs": [
+      "config_1_u0g1rl",
+      "config_2_u2g2rm",
+      "config_3_u4g3rh"
+    ],
+    "recommended_knobs": "PayloadKnobs(u=0, h='short', r='low', g=1, a=1, c=None)"
+  },
+  "e4": {
+    "with_dod": {
+      "pass_at_1": 1.0,
+      "avg_steps": 2.0,
+      "progress_per_sec": 2.0,
+      "avg_h_final": 0.0,
+      "avg_spec_violations": 0.3333333333333333,
+      "avg_rework": 1.25,
+      "total_results": 12
+    },
+    "without_dod": {
+      "pass_at_1": 1.0,
+      "avg_steps": 2.0,
+      "progress_per_sec": 2.0,
+      "avg_h_final": 0.0,
+      "avg_spec_violations": 2.0,
+      "avg_rework": 2.5,
+      "total_results": 12
+    },
+    "spec_violation_delta": 1.6666666666666667,
+    "rework_delta": 1.25
+  },
+  "e5": {
+    "metrics": {
+      "pass_at_1": 1.0,
+      "avg_steps": 2.0,
+      "progress_per_sec": 2.0,
+      "avg_h_final": 0.0,
+      "avg_spec_violations": 1.2,
+      "avg_rework": 1.2,
+      "total_results": 5
+    },
+    "performance_regressions": 0,
+    "total_tasks": 5
+  }
+}

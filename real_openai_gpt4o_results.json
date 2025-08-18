@@ -1,0 +1,173 @@
+{
+  "results": [
+    {
+      "task_id": "HumanEval/0",
+      "approach": "vanilla",
+      "prompt": "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given thr...",
+      "generated_code": "```python\nfrom typing import List\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i + 1] - numbers[i] < threshold:\n            return True\n    return False\n```",
+      "pass_at_1": false,
+      "execution_time": 3.1080210208892822,
+      "model_latency": 3.07232928276062,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmpi26auhyc/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmpi26auhyc/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "HumanEval/0",
+      "approach": "csce",
+      "prompt": "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given thr...",
+      "generated_code": "```python\nfrom typing import List\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    \"\"\"\n    # Sort the numbers to ensure we only need to check consecutive elements\n    numbers.sort()\n    \n    # Iterate through the sorted list and check the difference between consecutive elements\n    for i in range(len(numbers) - 1):\n        if abs(numbers[i] - numbers[i + 1]) < threshold:\n            return True\n    \n    return False\n```",
+      "pass_at_1": false,
+      "execution_time": 2.0213966369628906,
+      "model_latency": 1.988955020904541,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmphn54tttb/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmphn54tttb/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "HumanEval/1",
+      "approach": "vanilla",
+      "prompt": "from typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    se...",
+      "generated_code": "```python\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    paren_string = paren_string.replace(\" \", \"\")\n    result = []\n    current_group = []\n    balance = 0\n\n    for char in paren_string:\n        current_group.append(char)\n        if char == '(':\n            balance += 1\n        elif char == ')':\n            balance -= 1\n\n        if balance == 0 and current_group:\n            result.append(''.join(current_group))\n            current_group = []\n\n    return result\n```",
+      "pass_at_1": false,
+      "execution_time": 1.9276092052459717,
+      "model_latency": 1.8946552276611328,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmprxov0r0k/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmprxov0r0k/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "HumanEval/1",
+      "approach": "csce",
+      "prompt": "from typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    se...",
+      "generated_code": "```python\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    # Remove spaces from the input string\n    paren_string = paren_string.replace(\" \", \"\")\n    \n    # Initialize variables to track the current group and the result list\n    result = []\n    current_group = []\n    balance = 0\n    \n    # Iterate over each character in the string\n    for char in paren_string:\n        # Add the character to the current group\n        current_group.append(char)\n        \n        # Update the balance based on the character\n        if char == '(':\n            balance += 1\n        elif char == ')':\n            balance -= 1\n        \n        # If the balance is zero, we have a complete group\n        if balance == 0:\n            # Join the current group and add it to the result list\n            result.append(''.join(current_group))\n            # Reset the current group for the next set of parentheses\n            current_group = []\n    \n    return result\n```",
+      "pass_at_1": false,
+      "execution_time": 3.7618777751922607,
+      "model_latency": 3.729184627532959,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmpc2fiuukt/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmpc2fiuukt/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "HumanEval/2",
+      "approach": "vanilla",
+      "prompt": "\n\ndef truncate_number(number: float) -> float:\n    \"\"\" Given a positive floating point number, it can be decomposed into\n    and integer part (largest integer smaller than given number) and decimals\n ...",
+      "generated_code": "```python\ndef truncate_number(number: float) -> float:\n    \"\"\" Given a positive floating point number, it can be decomposed into\n    an integer part (largest integer smaller than given number) and decimals\n    (leftover part always smaller than 1).\n\n    Return the decimal part of the number.\n    \"\"\"\n    return number - int(number)\n```",
+      "pass_at_1": false,
+      "execution_time": 1.2562599182128906,
+      "model_latency": 1.2240140438079834,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmp7z9cuo9f/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmp7z9cuo9f/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "HumanEval/2",
+      "approach": "csce",
+      "prompt": "\n\ndef truncate_number(number: float) -> float:\n    \"\"\" Given a positive floating point number, it can be decomposed into\n    and integer part (largest integer smaller than given number) and decimals\n ...",
+      "generated_code": "```python\ndef truncate_number(number: float) -> float:\n    \"\"\" Given a positive floating point number, it can be decomposed into\n    an integer part (largest integer smaller than given number) and decimals\n    (leftover part always smaller than 1).\n\n    Return the decimal part of the number.\n    \"\"\"\n    integer_part = int(number)\n    decimal_part = number - integer_part\n    return decimal_part\n```",
+      "pass_at_1": false,
+      "execution_time": 2.913712978363037,
+      "model_latency": 2.8822720050811768,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmpwl2mi49v/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmpwl2mi49v/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "MBPP_2",
+      "approach": "vanilla",
+      "prompt": "Write a function to find the shared elements from the given two lists.",
+      "generated_code": "```python\ndef find_shared_elements(list1, list2):\n    return list(set(list1) & set(list2))\n```",
+      "pass_at_1": false,
+      "execution_time": 0.5968759059906006,
+      "model_latency": 0.5650837421417236,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmp0q3liduw/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmp0q3liduw/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "MBPP_2",
+      "approach": "csce",
+      "prompt": "Write a function to find the shared elements from the given two lists.",
+      "generated_code": "```python\ndef find_shared_elements(list1, list2):\n    # Convert both lists to sets to remove duplicates and allow for set intersection\n    set1 = set(list1)\n    set2 = set(list2)\n    \n    # Find the intersection of both sets\n    shared_elements = set1.intersection(set2)\n    \n    # Convert the result back to a list\n    return list(shared_elements)\n```",
+      "pass_at_1": false,
+      "execution_time": 2.149738073348999,
+      "model_latency": 2.117011547088623,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmp72d5n0bj/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmp72d5n0bj/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "MBPP_3",
+      "approach": "vanilla",
+      "prompt": "Write a python function to identify non-prime numbers.",
+      "generated_code": "```python\nfrom math import isqrt\n\ndef is_non_prime(n: int) -> bool:\n    if n <= 1:\n        return True\n    if n <= 3:\n        return False\n    if n % 2 == 0 or n % 3 == 0:\n        return True\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return True\n        i += 6\n    return False\n```",
+      "pass_at_1": false,
+      "execution_time": 3.346496343612671,
+      "model_latency": 3.3139545917510986,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmpny9d4tzy/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmpny9d4tzy/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "MBPP_3",
+      "approach": "csce",
+      "prompt": "Write a python function to identify non-prime numbers.",
+      "generated_code": "```python\nimport math\n\ndef is_non_prime(n):\n    \"\"\"\n    Determine if a number is non-prime.\n\n    Parameters:\n    n (int): The number to check.\n\n    Returns:\n    bool: True if the number is non-prime, False if it is prime.\n    \"\"\"\n    if n <= 1:\n        return True\n    if n <= 3:\n        return False\n    if n % 2 == 0 or n % 3 == 0:\n        return True\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return True\n        i += 6\n    return False\n```",
+      "pass_at_1": false,
+      "execution_time": 2.694951057434082,
+      "model_latency": 2.6632165908813477,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmphdb4m12_/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmphdb4m12_/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "MBPP_4",
+      "approach": "vanilla",
+      "prompt": "Write a function to find the n largest integers from a given list of numbers, returned in descending order.",
+      "generated_code": "```python\nimport heapq\n\ndef find_n_largest(numbers, n):\n    return heapq.nlargest(n, numbers)\n```",
+      "pass_at_1": false,
+      "execution_time": 1.9205348491668701,
+      "model_latency": 1.8891663551330566,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmpkptgnn9o/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmpkptgnn9o/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    },
+    {
+      "task_id": "MBPP_4",
+      "approach": "csce",
+      "prompt": "Write a function to find the n largest integers from a given list of numbers, returned in descending order.",
+      "generated_code": "```python\nimport heapq\n\ndef find_n_largest(numbers, n):\n    if n <= 0:\n        return []\n    # Use heapq to find the n largest numbers\n    largest_numbers = heapq.nlargest(n, numbers)\n    # Return them sorted in descending order\n    return sorted(largest_numbers, reverse=True)\n```",
+      "pass_at_1": false,
+      "execution_time": 2.0446560382843018,
+      "model_latency": 2.012864828109741,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmpe8pu2wfg/test_runner.py\", line 9, in <module>\n    spec.loader.exec_module(candidate_module)\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/tmp/tmpe8pu2wfg/candidate.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n"
+    }
+  ],
+  "analysis": {
+    "vanilla": {
+      "pass_at_1": 0.0,
+      "total_problems": 6,
+      "passed_problems": 0,
+      "avg_model_latency": 1.9932005405426025,
+      "avg_execution_time": 2.025966207186381,
+      "avg_steps": 1.0,
+      "avg_uncertainty": 0.0
+    },
+    "csce": {
+      "pass_at_1": 0.0,
+      "total_problems": 6,
+      "passed_problems": 0,
+      "avg_model_latency": 2.565584103266398,
+      "avg_execution_time": 2.5977220932642617,
+      "avg_steps": 2.0,
+      "avg_uncertainty": 0.0
+    },
+    "comparison": {
+      "pass_at_1_improvement": 0.0,
+      "latency_overhead": 0.5723835627237954,
+      "avg_steps_csce": 2.0
+    }
+  }
+}

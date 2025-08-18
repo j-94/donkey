@@ -1,0 +1,173 @@
+{
+  "results": [
+    {
+      "task_id": "HumanEval/0",
+      "approach": "vanilla",
+      "prompt": "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given thr...",
+      "generated_code": "from typing import List\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    for idx, elem in enumerate(numbers):\n        for idx2, elem2 in enumerate(numbers):\n            if idx != idx2:\n                distance = abs(elem - elem2)\n                if distance < threshold:\n                    return True\n    return False",
+      "pass_at_1": true,
+      "execution_time": 0.08539223670959473,
+      "model_latency": 0.05,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "HumanEval/0",
+      "approach": "csce",
+      "prompt": "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given thr...",
+      "generated_code": "from typing import List\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    for idx, elem in enumerate(numbers):\n        for idx2, elem2 in enumerate(numbers):\n            if idx != idx2:\n                distance = abs(elem - elem2)\n                if distance < threshold:\n                    return True\n    return False",
+      "pass_at_1": true,
+      "execution_time": 0.08523726463317871,
+      "model_latency": 0.05,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "HumanEval/1",
+      "approach": "vanilla",
+      "prompt": "from typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    se...",
+      "generated_code": "from typing import List\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    result = []\n    current_string = []\n    current_depth = 0\n    \n    for c in paren_string:\n        if c == '(':\n            current_depth += 1\n            current_string.append(c)\n        elif c == ')':\n            current_depth -= 1\n            current_string.append(c)\n            \n            if current_depth == 0:\n                result.append(''.join(current_string))\n                current_string.clear()\n    \n    return result",
+      "pass_at_1": true,
+      "execution_time": 0.08426356315612793,
+      "model_latency": 0.05,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "HumanEval/1",
+      "approach": "csce",
+      "prompt": "from typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    se...",
+      "generated_code": "from typing import List\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    result = []\n    current_string = []\n    current_depth = 0\n    \n    for c in paren_string:\n        if c == '(':\n            current_depth += 1\n            current_string.append(c)\n        elif c == ')':\n            current_depth -= 1\n            current_string.append(c)\n            \n            if current_depth == 0:\n                result.append(''.join(current_string))\n                current_string.clear()\n    \n    return result",
+      "pass_at_1": true,
+      "execution_time": 0.08714413642883301,
+      "model_latency": 0.05,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "HumanEval/2",
+      "approach": "vanilla",
+      "prompt": "\n\ndef truncate_number(number: float) -> float:\n    \"\"\" Given a positive floating point number, it can be decomposed into\n    and integer part (largest integer smaller than given number) and decimals\n ...",
+      "generated_code": "def truncate_number(number: float) -> float:\n    return number % 1.0",
+      "pass_at_1": true,
+      "execution_time": 0.08125543594360352,
+      "model_latency": 0.05,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "HumanEval/2",
+      "approach": "csce",
+      "prompt": "\n\ndef truncate_number(number: float) -> float:\n    \"\"\" Given a positive floating point number, it can be decomposed into\n    and integer part (largest integer smaller than given number) and decimals\n ...",
+      "generated_code": "def truncate_number(number: float) -> float:\n    return number % 1.0",
+      "pass_at_1": true,
+      "execution_time": 0.08016657829284668,
+      "model_latency": 0.05,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "MBPP_2",
+      "approach": "vanilla",
+      "prompt": "Write a function to find the shared elements from the given two lists.",
+      "generated_code": "def similar_elements(test_tup1, test_tup2):\n    res = tuple(set(test_tup1) & set(test_tup2))\n    return res",
+      "pass_at_1": true,
+      "execution_time": 0.08017826080322266,
+      "model_latency": 0.05,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "MBPP_2",
+      "approach": "csce",
+      "prompt": "Write a function to find the shared elements from the given two lists.",
+      "generated_code": "def similar_elements(test_tup1, test_tup2):\n    res = tuple(set(test_tup1) & set(test_tup2))\n    return res",
+      "pass_at_1": true,
+      "execution_time": 0.08144998550415039,
+      "model_latency": 0.05,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "MBPP_3",
+      "approach": "vanilla",
+      "prompt": "Write a python function to identify non-prime numbers.",
+      "generated_code": "import math\ndef is_not_prime(n):\n    if n <= 1:\n        return True\n    if n == 2:\n        return False\n    result = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            result = True\n            break\n    return result",
+      "pass_at_1": true,
+      "execution_time": 0.08014416694641113,
+      "model_latency": 0.05,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "MBPP_3",
+      "approach": "csce",
+      "prompt": "Write a python function to identify non-prime numbers.",
+      "generated_code": "import math\ndef is_not_prime(n):\n    if n <= 1:\n        return True\n    if n == 2:\n        return False\n    result = False\n    for i in range(2, int(math.sqrt(n)) + 1):\n        if n % i == 0:\n            result = True\n            break\n    return result",
+      "pass_at_1": true,
+      "execution_time": 0.08289504051208496,
+      "model_latency": 0.05,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": ""
+    },
+    {
+      "task_id": "MBPP_4",
+      "approach": "vanilla",
+      "prompt": "Write a function to find the n largest integers from a given list of numbers, returned in descending order.",
+      "generated_code": "# Mock response - implement the requested function",
+      "pass_at_1": false,
+      "execution_time": 0.0822756290435791,
+      "model_latency": 0.05,
+      "steps": 1,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmpg2nxm5vt/test_runner.py\", line 11, in <module>\n    globals()['heap_queue_largest'] = getattr(candidate_module, 'heap_queue_largest')\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'candidate' has no attribute 'heap_queue_largest'\n"
+    },
+    {
+      "task_id": "MBPP_4",
+      "approach": "csce",
+      "prompt": "Write a function to find the n largest integers from a given list of numbers, returned in descending order.",
+      "generated_code": "# Mock response - implement the requested function",
+      "pass_at_1": false,
+      "execution_time": 0.08168673515319824,
+      "model_latency": 0.05,
+      "steps": 2,
+      "uncertainty": 0.0,
+      "error_message": "Traceback (most recent call last):\n  File \"/tmp/tmp2p3s60vh/test_runner.py\", line 11, in <module>\n    globals()['heap_queue_largest'] = getattr(candidate_module, 'heap_queue_largest')\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'candidate' has no attribute 'heap_queue_largest'\n"
+    }
+  ],
+  "analysis": {
+    "vanilla": {
+      "pass_at_1": 0.8333333333333334,
+      "total_problems": 6,
+      "passed_problems": 5,
+      "avg_model_latency": 0.05000000000000001,
+      "avg_execution_time": 0.08225154876708984,
+      "avg_steps": 1.0,
+      "avg_uncertainty": 0.0
+    },
+    "csce": {
+      "pass_at_1": 0.8333333333333334,
+      "total_problems": 6,
+      "passed_problems": 5,
+      "avg_model_latency": 0.05000000000000001,
+      "avg_execution_time": 0.08309662342071533,
+      "avg_steps": 2.0,
+      "avg_uncertainty": 0.0
+    },
+    "comparison": {
+      "pass_at_1_improvement": 0.0,
+      "latency_overhead": 0.0,
+      "avg_steps_csce": 2.0
+    }
+  }
+}

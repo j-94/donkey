@@ -1,0 +1,53 @@
+{
+  "humaneval_results": [
+    {
+      "task_id": "HumanEval/0",
+      "test_passed": true,
+      "execution_time": 0.026622295379638672,
+      "csce_steps": 2,
+      "csce_uncertainty": 0.0
+    },
+    {
+      "task_id": "HumanEval/1",
+      "test_passed": true,
+      "execution_time": 0.025888919830322266,
+      "csce_steps": 2,
+      "csce_uncertainty": 0.0
+    },
+    {
+      "task_id": "HumanEval/2",
+      "test_passed": true,
+      "execution_time": 0.014298439025878906,
+      "csce_steps": 2,
+      "csce_uncertainty": 0.0
+    }
+  ],
+  "mbpp_results": [
+    {
+      "task_id": "MBPP_2",
+      "test_passed": true,
+      "execution_time": 0.014206409454345703,
+      "csce_steps": 2,
+      "csce_uncertainty": 0.0
+    },
+    {
+      "task_id": "MBPP_3",
+      "test_passed": true,
+      "execution_time": 0.014318466186523438,
+      "csce_steps": 2,
+      "csce_uncertainty": 0.0
+    },
+    {
+      "task_id": "MBPP_4",
+      "test_passed": true,
+      "execution_time": 0.014928340911865234,
+      "csce_steps": 2,
+      "csce_uncertainty": 0.0
+    }
+  ],
+  "summary": {
+    "total_tests": 6,
+    "total_passed": 6,
+    "pass_rate": 1.0
+  }
+}
