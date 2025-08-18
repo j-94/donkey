@@ -51,7 +51,7 @@ class OpenAIClient(ModelClient):
                         {"role": "system", "content": system},
                         {"role": "user", "content": user}
                     ],
-                    max_completion_tokens=max_tokens
+                    max_completion_tokens=8192  # Maximum tokens for GPT-5 reasoning
                 )
             else:
                 response = self.client.chat.completions.create(
@@ -61,11 +61,30 @@ class OpenAIClient(ModelClient):
                         {"role": "user", "content": user}
                     ],
                     temperature=temperature,
-                    max_tokens=max_tokens
+                    max_tokens=8192  # Maximum tokens for GPT-5
                 )
             
             latency = time.time() - start_time
-            text = response.choices[0].message.content or ""
+            
+            import json
+            print(f"[DEBUG] Model: {self.model}")
+            print(f"[DEBUG] Response dump: {json.dumps(response.model_dump(), indent=2)[:2000]}")
+            
+            msg = response.choices[0].message
+            
+            if msg.content:
+                text = msg.content
+                print(f"[DEBUG] Got content: {len(text)} chars")
+            elif msg.tool_calls:
+                tool_info = []
+                for tc in msg.tool_calls:
+                    tool_info.append(f"{tc.function.name}({tc.function.arguments})")
+                    print(f"[TOOL_CALL] {tc.function.name}({tc.function.arguments})")
+                text = f"# Model attempted tool calls: {', '.join(tool_info)}\n# Please implement tool loop or use tool_choice='none'"
+                print(f"[DEBUG] Got tool_calls instead of content")
+            else:
+                text = "# No content or tool_calls returned"
+                print(f"[DEBUG] No content or tool_calls found")
             
             return Completion(text=text, latency_s=latency)
             
