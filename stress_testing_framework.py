@@ -331,7 +331,21 @@ class EvolutionDriftDetector:
         
         oscillations = 0
         for key in ['u', 'g', 'h', 'r']:
-            values = [entry['psi'].get(key, 0) for entry in self.psi_history[-5:]]
+            raw_values = [entry['psi'].get(key, 0) for entry in self.psi_history[-5:]]
+            values = []
+            for val in raw_values:
+                if isinstance(val, str):
+                    if val in ['short', 'low']:
+                        values.append(0)
+                    elif val in ['long', 'high']:
+                        values.append(2)
+                    elif val == 'med':
+                        values.append(1)
+                    else:
+                        values.append(1)  # Default middle value
+                else:
+                    values.append(val if isinstance(val, (int, float)) else 1)
+            
             direction_changes = 0
             for i in range(1, len(values)):
                 if i > 1:
@@ -343,11 +357,28 @@ class EvolutionDriftDetector:
             if direction_changes >= 2:  # Oscillating
                 oscillations += 1
         
-        recent_perf = self.performance_history[-3:]
-        early_perf = self.performance_history[:3]
+        recent_perf = []
+        for entry in self.performance_history[-3:]:
+            perf = entry if isinstance(entry, (int, float)) else entry.get('performance', 0.5) if isinstance(entry, dict) else 0.5
+            if isinstance(perf, str):
+                try:
+                    perf = float(perf)
+                except (ValueError, TypeError):
+                    perf = 0.5
+            recent_perf.append(perf)
         
-        avg_recent = sum(recent_perf) / len(recent_perf)
-        avg_early = sum(early_perf) / len(early_perf)
+        early_perf = []
+        for entry in self.performance_history[:3]:
+            perf = entry if isinstance(entry, (int, float)) else entry.get('performance', 0.5) if isinstance(entry, dict) else 0.5
+            if isinstance(perf, str):
+                try:
+                    perf = float(perf)
+                except (ValueError, TypeError):
+                    perf = 0.5
+            early_perf.append(perf)
+        
+        avg_recent = sum(recent_perf) / len(recent_perf) if recent_perf else 0.5
+        avg_early = sum(early_perf) / len(early_perf) if early_perf else 0.5
         
         regression = (avg_early - avg_recent) / avg_early if avg_early > 0 else 0
         
