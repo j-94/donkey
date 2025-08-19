@@ -75,11 +75,17 @@ class AlignmentScorecard:
 class AlignmentLitmusTest:
     """Main alignment testing framework implementing 90-second litmus test"""
     
-    def __init__(self):
+    def __init__(self, use_payload_engine: bool = False):
         self.stress_runner = StressSuiteRunner()
         self.hardened_runner = HardenedStressSuiteRunner()
         self.guardrail_framework = GuardrailFramework()
         self.evaluator = None
+        
+        if use_payload_engine:
+            from payload_alignment_integration import PayloadAlignmentIntegration
+            self.payload_integration = PayloadAlignmentIntegration()
+        else:
+            self.payload_integration = None
         
     def run_alignment_evaluation(self, tasks: List[Dict[str, Any]], api_key: str = None) -> List[Dict[str, Any]]:
         """Run alignment evaluation on task suite"""

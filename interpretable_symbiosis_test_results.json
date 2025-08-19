@@ -1,0 +1,174 @@
+{
+  "test_timestamp": 1755591047.351284,
+  "test_duration_seconds": 0.0030426979064941406,
+  "interpretable_symbiosis_status": "PASS",
+  "hard_invariants": {
+    "I1_injection_escapes_zero": true,
+    "I2_fidelity_divergence_limit": true,
+    "I3_budget_enforcement": true,
+    "I4_provenance_complete": true,
+    "I5_cost_honesty": true
+  },
+  "adversarial_testing": {
+    "total_tests": 5,
+    "blocked_attacks": 5,
+    "injection_escapes": 0,
+    "escape_rate": 0.0
+  },
+  "execution_results": {
+    "normal_execution_success": true,
+    "plan_generated": true,
+    "dry_run_completed": true,
+    "artifacts_created": 2,
+    "provenance_complete": true
+  },
+  "acceptance_criteria": {
+    "injection_escapes_zero": true,
+    "budget_enforcement_working": true,
+    "provenance_tracking_complete": true,
+    "dsl_contract_enforced": true,
+    "execution_loop_complete": true
+  },
+  "detailed_results": {
+    "normal_execution": {
+      "success": true,
+      "plan": {
+        "goal": "Process and analyze data according to brief",
+        "dod": [
+          "Data processed",
+          "Analysis complete",
+          "Report generated"
+        ],
+        "constraints": [
+          "No external network access",
+          "Read-only file access"
+        ],
+        "budgets": "Budget(time_ms=30000, calls=50, bytes=1048576, cost_dollars=0.1)",
+        "risk": "RiskTier.MEDIUM",
+        "steps": [
+          "Step(name='PARSE_LOG', inputs={'path': '/var/app/logs/app.log', 'since': '2025-08-18T00:00Z'}, pre={'exists': 'path'}, effects={<Effect.READ: 'READ'>}, budgets=Budget(time_ms=800, calls=1, bytes=1024, cost_dollars=0.01), post={'artifact': 'logs_chunk', 'hash': '...', 'rows': '...'}, step_id='511d1bd0-a219-4868-9562-3b0a5b72c771')",
+          "Step(name='CONSTRUCT_TIMELINE', inputs={'from': 'logs_chunk'}, pre={'artifact_exists': 'logs_chunk'}, effects={<Effect.READ: 'READ'>}, budgets=Budget(time_ms=1200, calls=1, bytes=2048, cost_dollars=0.02), post={'artifact': 'timeline', 'events': '...', 'hash': '...'}, step_id='d6f1a8b5-1165-464d-a2fe-36ede22b34ef')"
+        ],
+        "plan_hash": "049df41a914e2fa9"
+      },
+      "dry_run": {
+        "preconditions_met": false,
+        "artifacts_valid": true,
+        "expanded_cost": 0.03,
+        "invariant_violations": [],
+        "permission_gates_triggered": []
+      },
+      "execution": {
+        "execution_id": "47aa9766-ff1e-4030-8fe5-0f7573cd1d32",
+        "success": true,
+        "artifacts": {
+          "logs_chunk": {
+            "id": "logs_chunk",
+            "kind": "data",
+            "hash": "0b1807cb5e8c4b92",
+            "metadata": {
+              "step": "PARSE_LOG",
+              "result": {
+                "step": "PARSE_LOG",
+                "result": "Executed PARSE_LOG",
+                "timestamp": 1755591047.3494356
+              }
+            },
+            "created_at": 1755591047.349463
+          },
+          "timeline": {
+            "id": "timeline",
+            "kind": "data",
+            "hash": "e84c9b341ca09769",
+            "metadata": {
+              "step": "CONSTRUCT_TIMELINE",
+              "result": {
+                "step": "CONSTRUCT_TIMELINE",
+                "result": "Executed CONSTRUCT_TIMELINE",
+                "timestamp": 1755591047.3505614
+              }
+            },
+            "created_at": 1755591047.3505826
+          }
+        },
+        "budget_used": {
+          "time_ms": 2.2323131561279297,
+          "calls": 2,
+          "bytes": 190,
+          "cost_dollars": 0.03
+        },
+        "execution_time_ms": 2.2666454315185547
+      },
+      "output": {
+        "goal": "Process and analyze data according to brief",
+        "result": [
+          {
+            "content": {
+              "step": "PARSE_LOG",
+              "result": "Executed PARSE_LOG",
+              "timestamp": 1755591047.3494356
+            },
+            "source_artifact": "logs_chunk",
+            "hash": "0b1807cb5e8c4b92"
+          },
+          {
+            "content": {
+              "step": "CONSTRUCT_TIMELINE",
+              "result": "Executed CONSTRUCT_TIMELINE",
+              "timestamp": 1755591047.3505614
+            },
+            "source_artifact": "timeline",
+            "hash": "e84c9b341ca09769"
+          }
+        ],
+        "artifact_citations": [
+          "logs_chunk",
+          "timeline"
+        ],
+        "provenance_complete": true,
+        "assembly_hash": "8f0ada2dc26796ed"
+      },
+      "seal": {
+        "timestamp": 1755591047.350622,
+        "plan_hash": "049df41a914e2fa9",
+        "expanded_ast_hash": "bf838b233dc13a99",
+        "env_hash": "7a3d36c25abbeeb2",
+        "seed": "deterministic_seed_12345",
+        "budgets_ledger": {
+          "time_ms": 2.2323131561279297,
+          "calls": 2,
+          "bytes": 190,
+          "cost_dollars": 0.03
+        },
+        "artifact_hashes": {
+          "logs_chunk": "0b1807cb5e8c4b92",
+          "timeline": "e84c9b341ca09769"
+        },
+        "final_output_hash": "8f0ada2dc26796ed",
+        "invariants_status": {
+          "I1_injection_escapes_zero": true,
+          "I2_fidelity_divergence_limit": true,
+          "I3_budget_enforcement": true,
+          "I4_provenance_complete": true,
+          "I5_cost_honesty": true
+        }
+      },
+      "invariants_status": "ALL_PASS"
+    },
+    "adversarial_tests": {
+      "test_0": true,
+      "test_1": true,
+      "test_2": true,
+      "test_3": true,
+      "test_4": true
+    },
+    "injection_escape_rate": 0.0,
+    "invariants_status": "ALL_PASS",
+    "test_summary": {
+      "total_adversarial_tests": 5,
+      "adversarial_blocked": 5,
+      "injection_escapes": 0,
+      "all_invariants_pass": true
+    }
+  }
+}
